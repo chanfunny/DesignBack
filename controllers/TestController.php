@@ -13,7 +13,7 @@ class TestController extends Controller
         exit;
         $tests = (new \yii\db\Query())
             ->from('test')
-            ->all();
+            ->all();  
 
         return \yii\helpers\Json::encode($tests);
 	}
